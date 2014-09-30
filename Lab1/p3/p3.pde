@@ -3,7 +3,7 @@
 void setup() {
   background(0);
   stroke(255, 255, 0);
-  size(700, 800);
+  size(800, 800);
 }
 
 

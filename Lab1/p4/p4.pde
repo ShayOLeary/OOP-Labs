@@ -2,23 +2,20 @@
 
 void setup() {
   background(0);
-
-  size(700, 800);
+  stroke(255, 255, 0);
+  size(800, 800);
 }
 
 
 void draw() {
   int i, j;
-  //to change the colours every second
-  frameRate(1);
+
   //create array of face objects
   Face[][] faces = new Face[8][8];
-
+ 
   for (i=1; i<faces[i].length-1; i++)
-  { 
+  {
     for (j=1; j<faces[j].length-1; j++) {
-      //adding some glamour by randomizing every face's colours 
-      stroke(random(255), random(255 ), random(255));
       //happy faces will be even numbers
       if (i%2==0) {
         faces[i][j] = new Face(100*i, 100*j, true);
